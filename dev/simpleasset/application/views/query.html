@@ -46,7 +46,7 @@
        $("#div-result").show()
 
          //2. request 전송(서버쪽에 발송)
-         // 자산조회를 위한 method는 GET / url은 
+         // 자산조회를 위한 method는 GET / id와 key  값을 서버로 전송하고, data와 status를 가져온다. / data를 파싱해준다.
         $.get('/asset', {id, key}, (data, status)=> {
             if(status == 'success'){
                 $("#result").empty()
